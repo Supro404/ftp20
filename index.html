@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Waste 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 100px;
+        }
+
+        .waste-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .wasted-page {
+            display: none;
+            background-color: yellow;
+        }
+
+        .wasted-title {
+            color: red;
+            font-size: 24px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .wasted-body {
+            text-transform: uppercase; /* Convert text to uppercase */
+            letter-spacing: 3px; /* Add some letter spacing for better readability */
+            color: red;
+            font-size: 18px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="waste-button" onclick="waste2024()">Click to Waste 2024</button>
+    <div id="wastedPage" class="wasted-page">
+        <h1 class="wasted-title">You are already WASTED</h1>
+        <p class="wasted-body">Throw your android out of the window, It's the main culprit</p>
+    </div>
+</div>
+
+<script>
+    function waste2024() {
+        // Hide the button
+        document.querySelector('.waste-button').style.display = 'none';
+        // Show the wasted page
+        document.getElementById('wastedPage').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
